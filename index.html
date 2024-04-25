@@ -221,16 +221,17 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <div class="flex gap-2 w-full">
                 <img 
                 src="./assets/refri-1.png" 
-                alt="Cola cola lata"
+                alt="Coca cola lata"
                 class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
                 />
                 <div class="w-full">
-                    <p class="font-bold">Cola cola lata</p>
+                    <p class="font-bold">Coca cola lata</p>
+                    <p class="text-sm font-light mt-1">lata de refrigerante de 350ml </p>
 
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p class="font-bold text-lg">R$ 5.99</p>
                             <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                    data-name="Cola cola lata"
+                                    data-name="Coca cola lata"
                                     data-price="5.99"
                                 >
                                 <i class="fa fa-cart-plus  text-lg text-white"></i>
@@ -246,6 +247,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                 />
                 <div class="w-full">
                     <p class="font-bold">Guarana lata</p>
+                    <p class="text-sm font-light mt-1">lata de refrigerante de 350ml </p>
 
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p class="font-bold text-lg">R$ 4.50</p>
@@ -261,7 +263,13 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         </div>
             <!-- GRID BEBIDAS FIM -->
-
     </div>
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+           (<span id="cart-count">2</span>)
+           Sacola de compras
+           <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
 </body>
 </html>
