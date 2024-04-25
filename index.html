@@ -1,214 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
-    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="styles/output.css">
-    <title>ZoomBurger</title>
+<link rel="stylesheet" href="styles/output.css">
+<title>ZoomBurger</title>
 </head>
 <body>
-        <!-- HEADER -->
-    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
-        <div class="w-full h-full flex flex-col justify-center items-center">
-            <img
-            src="./assets/hamb-1.png"
-            alt="Logo Cardapio"
-            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
-            />
-            <h1 class="text-4x1 mt-4 mb-2 font-bold text-white">
-                ZoomBurger
-            </h1>
+    <!-- HEADER -->
+<header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+        src="./assets/hamb-1.png"
+        alt="Logo Cardapio"
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+        <h1 class="text-4x1 mt-4 mb-2 font-bold text-white">
+            ZoomBurger
+        </h1>
 
-            <span class="text-white font-medium">Rua Cristo Redentor - Fortaleza</span>
+        <span class="text-white font-medium">Rua Cristo Redentor - Fortaleza</span>
 
-            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-                <span class="text-white font-medium">
-                    Segunda á Domingo - 18hrs as 22hrs
-                </span>
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+            <span class="text-white font-medium">
+                Segunda á Domingo - 18hrs as 22hrs
+            </span>
+        </div>
+    </div>
+</header>
+    <!-- FIM DO HEADER -->
+
+    <!-- INICIO DO BODY -->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6"> Conheça o nosso cardapio</h2>
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-7x1">
+            <div class="flex gap-2">
+                <img 
+                src="./assets/hamb-1.png" 
+                alt="Hamburger Smash"
+                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Hamburger Smash</p>
+                    <p class="text-sm font-light mt-1">Carne Angus suculenta, queijo cheddar derretido, 
+                        cebolas caramelizadas e um molho especial.</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 17.99</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="Hamburger Smash"
+                                    data-price="17.99"
+                                >
+                                <i class="fa fa-cart-plus  text-lg text-white"></i>
+                            </button>
+                        </div>
+                </div>
             </div>
-        </div>
-    </header>
-        <!-- FIM DO HEADER -->
+            <div class="flex gap-2">
+                <img 
+                src="./assets/hamb-2.png" 
+                alt="Hamburger Classic"
+                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Hamburger Classic</p>
+                    <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
+                        cebolas caramelizadas e um molho especial.</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 15.99</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="Hamburger Classic"
+                                    data-price="15.99"
+                                >
+                                <i class="fa fa-cart-plus  text-lg text-white"></i>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img 
+                src="./assets/hamb-3.png" 
+                alt="Cheddar Melter"
+                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Cheddar Melter</p>
+                    <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
+                        cebolas caramelizadas e um molho especial.</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 22.99</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="Cheddar Melter"
+                                    data-price="22.99"
+                                >
+                                <i class="fa fa-cart-plus  text-lg text-white"></i>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img 
+                src="./assets/hamb-4.png" 
+                alt="McNifico Bacon"
+                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">McNifico Bacon</p>
+                    <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
+                        cebolas caramelizadas e um molho especial.</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 23.99</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="McNifico Bacon"
+                                    data-price="23.99"
+                                >
+                                <i class="fa fa-cart-plus  text-lg text-white"></i>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img 
+                src="./assets/hamb-5.png" 
+                alt="Hamburger Burger"
+                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Hamburger Burger</p>
+                    <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
+                        cebolas caramelizadas e um molho especial.</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 28.99</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="Hamburger Burger"
+                                    data-price="28.99"
+                                >
+                                <i class="fa fa-cart-plus  text-lg text-white"></i>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img 
+                src="./assets/hamb-6.png" 
+                alt="Hamburger x-Tudo"
+                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Hamburger x-Tudo</p>
+                    <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
+                        cebolas caramelizadas e um molho especial.</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 45.99</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="Hamburger x-Tudo"
+                                    data-price="45.99"
+                                >
+                                <i class="fa fa-cart-plus  text-lg text-white"></i>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img 
+                src="./assets/hamb-7.png" 
+                alt="Hamburger melt-bacon"
+                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Hamburger melt-bacon</p>
+                    <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
+                        cebolas caramelizadas e um molho especial.</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 18.99</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="Hamburger melt-bacon"
+                                    data-price="18.99"
+                                >
+                                <i class="fa fa-cart-plus  text-lg text-white"></i>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img 
+                src="./assets/hamb-8.png" 
+                alt="Hamburger Classic vegano"
+                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Hamburger Classic vegano</p>
+                    <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
+                        cebolas caramelizadas e um molho especial.</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 25.99</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="Hamburger Classic vegano"
+                                    data-price="25.99"
+                                >
+                                <i class="fa fa-cart-plus  text-lg text-white"></i>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            
+        </main>
 
-        <!-- INICIO DO BODY -->
-        <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6"> Conheça o nosso cardapio</h2>
-        <div id="menu">
-            <main class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-7x1">
-                <div class="flex gap-2">
-                    <img 
-                    src="./assets/hamb-1.png" 
-                    alt="Hamburger Smash"
-                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-                    />
-                    <div>
-                        <p class="font-bold">Hamburger Smash</p>
-                        <p class="text-sm font-light mt-1">Carne Angus suculenta, queijo cheddar derretido, 
-                            cebolas caramelizadas e um molho especial.</p>
-                            <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg">R$ 17.99</p>
-                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                        data-name="Hamburger Smash"
-                                        data-price="17.99"
-                                    >
-                                    <i class="fa fa-cart-plus  text-lg text-white"></i>
-                                </button>
-                            </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img 
-                    src="./assets/hamb-2.png" 
-                    alt="Hamburger Classic"
-                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-                    />
-                    <div>
-                        <p class="font-bold">Hamburger Classic</p>
-                        <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
-                            cebolas caramelizadas e um molho especial.</p>
-                            <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg">R$ 15.99</p>
-                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                        data-name="Hamburger Classic"
-                                        data-price="15.99"
-                                    >
-                                    <i class="fa fa-cart-plus  text-lg text-white"></i>
-                                </button>
-                            </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img 
-                    src="./assets/hamb-3.png" 
-                    alt="Cheddar Melter"
-                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-                    />
-                    <div>
-                        <p class="font-bold">Cheddar Melter</p>
-                        <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
-                            cebolas caramelizadas e um molho especial.</p>
-                            <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg">R$ 22.99</p>
-                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                        data-name="Cheddar Melter"
-                                        data-price="22.99"
-                                    >
-                                    <i class="fa fa-cart-plus  text-lg text-white"></i>
-                                </button>
-                            </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img 
-                    src="./assets/hamb-4.png" 
-                    alt="McNifico Bacon"
-                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-                    />
-                    <div>
-                        <p class="font-bold">McNifico Bacon</p>
-                        <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
-                            cebolas caramelizadas e um molho especial.</p>
-                            <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg">R$ 23.99</p>
-                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                        data-name="McNifico Bacon"
-                                        data-price="23.99"
-                                    >
-                                    <i class="fa fa-cart-plus  text-lg text-white"></i>
-                                </button>
-                            </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img 
-                    src="./assets/hamb-5.png" 
-                    alt="Hamburger Burger"
-                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-                    />
-                    <div>
-                        <p class="font-bold">Hamburger Burger</p>
-                        <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
-                            cebolas caramelizadas e um molho especial.</p>
-                            <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg">R$ 28.99</p>
-                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                        data-name="Hamburger Burger"
-                                        data-price="28.99"
-                                    >
-                                    <i class="fa fa-cart-plus  text-lg text-white"></i>
-                                </button>
-                            </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img 
-                    src="./assets/hamb-6.png" 
-                    alt="Hamburger x-Tudo"
-                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-                    />
-                    <div>
-                        <p class="font-bold">Hamburger x-Tudo</p>
-                        <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
-                            cebolas caramelizadas e um molho especial.</p>
-                            <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg">R$ 45.99</p>
-                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                        data-name="Hamburger x-Tudo"
-                                        data-price="45.99"
-                                    >
-                                    <i class="fa fa-cart-plus  text-lg text-white"></i>
-                                </button>
-                            </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img 
-                    src="./assets/hamb-7.png" 
-                    alt="Hamburger melt-bacon"
-                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-                    />
-                    <div>
-                        <p class="font-bold">Hamburger melt-bacon</p>
-                        <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
-                            cebolas caramelizadas e um molho especial.</p>
-                            <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg">R$ 18.99</p>
-                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                        data-name="Hamburger melt-bacon"
-                                        data-price="18.99"
-                                    >
-                                    <i class="fa fa-cart-plus  text-lg text-white"></i>
-                                </button>
-                            </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img 
-                    src="./assets/hamb-8.png" 
-                    alt="Hamburger Classic vegano"
-                    class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
-                    />
-                    <div>
-                        <p class="font-bold">Hamburger Classic vegano</p>
-                        <p class="text-sm font-light mt-1">Carne Angus duplicado, queijo cheddar derretido, 
-                            cebolas caramelizadas e um molho especial.</p>
-                            <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg">R$ 25.99</p>
-                                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                        data-name="Hamburger Classic vegano"
-                                        data-price="25.99"
-                                    >
-                                    <i class="fa fa-cart-plus  text-lg text-white"></i>
-                                </button>
-                            </div>
-                    </div>
-                </div>
-               
-            </main>
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-2xl md:text-3xl text-center">
+                Bebidas
+            </h2>
         </div>
+            <!-- GRID BEBIDAS INICIO -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+            <!-- INICIO DO PRODUTO -->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="./assets/refri-1.png" 
+                alt="Cola cola lata"
+                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div class="w-full">
+                    <p class="font-bold">Cola cola lata</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 5.99</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="Cola cola lata"
+                                    data-price="5.99"
+                                >
+                                <i class="fa fa-cart-plus  text-lg text-white"></i>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="flex gap-2 w-full">
+                <img 
+                src="./assets/refri-2.png" 
+                alt="Guarana lata"
+                class="w-28 h-28 rounded-lg hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div class="w-full">
+                    <p class="font-bold">Guarana lata</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 4.50</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="Guarana lata"
+                                    data-price="4.50"
+                                >
+                                <i class="fa fa-cart-plus  text-lg text-white"></i>
+                            </button>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+            <!-- GRID BEBIDAS FIM -->
+
+    </div>
 </body>
 </html>
